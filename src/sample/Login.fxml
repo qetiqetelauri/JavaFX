@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="347.0" prefWidth="566.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignInController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="372.0" prefWidth="566.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="92.0" layoutX="253.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1-300x227.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="372.0" layoutY="26.0" text="Not member?" textFill="#a2a1ab">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="284.0" layoutY="70.0" text="A r e " textFill="#94a4a1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="SignUpButton" layoutX="466.0" layoutY="20.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="73.0" style="-fx-background-color: #151928;" text="Sign Up" textFill="#a2a0ab" />
+            <Label layoutX="238.0" layoutY="70.0" text="M o i " textFill="#1abc9c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="UserNamefield" focusColor="#a2a0ab" layoutX="171.0" layoutY="143.0" prefHeight="31.0" prefWidth="226.0" promptText="  UserName" style="-fx-color: white;" styleClass="textField" stylesheets="@stylesheet.css" unFocusColor="#a2a0ab">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="PasswordField" focusColor="#a2a0ab" layoutX="171.0" layoutY="207.0" prefHeight="31.0" prefWidth="226.0" promptText="  Password" styleClass="textField" stylesheets="@stylesheet.css" unFocusColor="#a2a0ab">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXTextField>
+            <FontAwesomeIcon fill="#a2a1ab" iconName="USER" layoutX="137.0" layoutY="176.0" size="2em" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <FontAwesomeIcon fill="#a2a1ab" iconName="UNLOCK_ALT" layoutX="138.0" layoutY="234.0" size="2em" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <JFXButton layoutX="188.0" layoutY="302.0" mnemonicParsing="false" text="Button" />
+            <JFXButton fx:id="SignInButton" layoutX="225.0" layoutY="271.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="17.0" prefWidth="73.0" style="-fx-background-color: #151928;" text="Sign In" textFill="#a2a0ab" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
